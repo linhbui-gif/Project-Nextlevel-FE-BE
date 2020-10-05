@@ -1,0 +1,51 @@
+// FONTS
+@font-face {
+  font-family: 'Lato';
+  src: url(./Lato/Lato-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato Light';
+  src: url(./Lato/Lato-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato Bold';
+  src: url(./Lato/Lato-Bold.ttf) format('truetype');
+}
+// COLORS
+$white:   #fff;
+$blue:    #4030E8;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #9b59b6;
+$red:     #ee2b5c;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #28a745;
+$teal:    #20c997;
+$cyan:    #30E89C;
+
+// $primary:   $indigo;
+$primary:   $blue;
+$secondary: $blue;
+$success: $cyan;
+$info: #B2C9FA;     
+$warning: #F99511; 
+// $danger:   
+$light: #f1f2f6;
+$gray-200: $light;
+$card-cap-bg: $light;
+// $card-cap-color: $white;
+// $dark: $white;  
+
+// Set gray-200, or change only $jumbotron-bg
+// $gray-200: #e9ecef;
+$border-radius: .25rem;
+
+$font-family-base: "Lato Light";
+
+h1, h2, h3, h4, h5, h6, nav, .btn {
+  font-family: "Lato";
+}
+.navbbar-brand {
+  font-family: "Lato Bold";
+}

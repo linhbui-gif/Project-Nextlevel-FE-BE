@@ -1,0 +1,56 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "commonjs": true
+    },
+    "root": true,
+    "extends": [
+        "airbnb",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended",
+        // "plugin:prettier/@typescript-eslint",
+        "plugin:react-hooks/recommended"
+    ],
+    "globals": {
+        "process": true,
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly",
+        "React": "writable"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 11,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "react/react-in-jsx-scope": "off",
+        "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+        "react-hooks/exhaustive-deps": "warn", // Checks effect
+        "import/extensions": 0,
+        "@typescript-eslint/no-explicit-any": 0,
+        "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+        "jsx-a11y/anchor-is-valid": 0,
+        "jsx-a11y/label-has-associated-control": 0,
+        "react/jsx-props-no-spreading": 0,
+        "import/no-unresolved": 0,
+        "max-len": ["error", {"code": 200, "ignoreUrls": true}],
+        "prettier/prettier": ["error", {"endOfLine":"auto"}],
+        "react/state-in-constructor": 0
+    },
+    "settings": {
+        "import/resolver": {
+          "node": {
+            "extensions": [".ts", ".tsx"]
+          }
+        }
+    }
+}
